@@ -12,7 +12,7 @@ const useGetConversations = () => {
             setLoading(true)
             try {
                 /* const result = await fetch(`http://localhost:8000/api/users/${authUser._id}`, { */
-                const result = await fetch(`https://smart-chatapp.onrender.com/api/users`, {
+                const result = await fetch(`/api/users`, {
                     headers: { 
                         Accept: 'application/json',
                         'Content-type': 'application/json' 

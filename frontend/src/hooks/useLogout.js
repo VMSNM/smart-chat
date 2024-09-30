@@ -9,7 +9,7 @@ const useLogout = () => {
   const logout = async () => {
     setLoading(true)
     try {
-        const result = await fetch('https://smart-chatapp.onrender.com/api/auth/logout', {
+        const result = await fetch('/api/auth/logout', {
             method: 'POST',
             headers: { 
                 Accept: 'application/json',

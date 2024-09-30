@@ -13,7 +13,7 @@ const useSignup = () => {
 
         setLoading(true)
         try {
-            const result = await fetch('https://smart-chatapp.onrender.com/api/auth/signup', {
+            const result = await fetch('/api/auth/signup', {
                 method: 'POST',
                 headers: { 
                     Accept: 'application/json',

@@ -18,11 +18,11 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true })); // To parse Form data in the req.body
 
-/* app.use(cors({
+app.use(cors({
     origin: 'https://smart-chatapp.onrender.com',
     credentials: true,
     methods: 'GET, PUT, POST, OPTIONS, DELETE'
-})); */
+}));
 
 app.use('/api/auth', authRoutes);
 app.use('/api/messages', messageRoutes);

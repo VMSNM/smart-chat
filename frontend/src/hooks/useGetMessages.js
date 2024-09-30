@@ -13,7 +13,7 @@ const useGetMessages = () => {
         setLoading(true)
         try {
             /* const result = await fetch(`http://localhost:8000/api/messages/${selectedConversation._id}`, { */
-            const result = await fetch(`https://smart-chatapp.onrender.com/api/messages/${selectedConversation._id}`, {
+            const result = await fetch(`/api/messages/${selectedConversation._id}`, {
                 method: 'GET',
                 headers: { 
                     Accept: 'application/json',

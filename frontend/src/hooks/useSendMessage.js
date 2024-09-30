@@ -11,7 +11,7 @@ const useSendMessage = () => {
     const sendMessage = async (message) => {
         setLoading(true)
         try {
-            const result = await fetch(`https://smart-chatapp.onrender.com/api/messages/send/${selectedConversation._id}`, {
+            const result = await fetch(`/api/messages/send/${selectedConversation._id}`, {
                 method: 'POST',
                 headers: { 
                     Accept: 'application/json',
